@@ -1,13 +1,19 @@
 var mineflayer = require('mineflayer');
+var argv = require('minimist')(process.argv.slice(2));
 
-var parseArgs = require('minimist');
+console.log("Starting bot.");
 
+console.log(argv.host);
+console.log(argv.port);
+console.log(argv.username);
+console.log(argv.password);
+console.log("--------------");
 
 var bot = mineflayer.createBot({
-  host: parseArgs.host, // optional
-  port: parseArgs.port,       // optional
-  username: parseArgs.username, // email and password are required only for
-  password: parseArgs.password,          // online-mode=true servers
+  host: argv.host, // optional
+  port: argv.port,       // optional
+  username: argv.username, // email and password are required only for
+  password: argv.password,          // online-mode=true servers
 });
 bot.on('chat', function(username, message) {
   if (username === bot.username) return;
