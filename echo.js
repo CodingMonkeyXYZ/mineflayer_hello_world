@@ -1,6 +1,7 @@
 // Simple mineflayer bot example for CivCraft.
 // Echo's chat back to you.
 // Also runs /jalist when it logs in.
+// Detects intruders and pms them.
 // MonkeyWithAnAxe.
 
 var mineflayer = require('mineflayer');
