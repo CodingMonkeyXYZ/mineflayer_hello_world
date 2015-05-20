@@ -9,3 +9,4 @@ node echo.js --host mc.civcraft.vg --port 25565 --username %your_username% --pas
 
 I recomend using environment variables to store the username and password. Obviously on linux you leave out the %% around the environment variables.
 
+Please go to http://www.reddit.com/r/MinecraftBotting for more help on CivCraft botting.
